@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Editable Table</title>
+     
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+</head>
+<body>
+        <div class="container">
+               
+                
+                <div id="table" class="table-editable">
+                  <span class="table-add glyphicon glyphicon-plus"></span>
+                  <table class="table">
+                    <tr>
+                      <th>Marca</th>
+                      <th>Modelo</th>
+                      <th>Nombre</th>
+                      <th>Cantidad</th>
+                      <th>Precio Unitario</th>
+                      <th>Precio Total</th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                        <td>LG</td>
+                        <td>LG STYLUS</td>
+                        <td>G4</td>
+                        <td>
+                                <input type="text" class="cantidad">
+                            </td>
+                            <td>
+                                <input type="text" class="precio">
+                            </td>
+                      <td class="total">
+                      </td>
+                      <td>
+                        <span class="table-remove glyphicon glyphicon-remove"></span>
+                      </td>
+                      <td>
+                        <span class="table-up glyphicon glyphicon-arrow-up"></span>
+                        <span class="table-down glyphicon glyphicon-arrow-down"></span>
+                      </td>
+                    </tr>
+                    <!-- This is our clonable table line -->
+                    <tr class="hide">
+                            <td>Untitled</td>
+                            <td>Untitled</td>
+                            <td>Untitled</td>
+                            <td>
+                                    <input type="text" class="cantidad">
+                                </td>
+                                <td>
+                                    <input type="text" class="precio">
+                                </td>
+                          <td class="total">
+                                
+                          </td>
+                      <td>
+                        <span class="table-remove glyphicon glyphicon-remove"></span>
+                      </td>
+                      <td>
+                        <span class="table-up glyphicon glyphicon-arrow-up"></span>
+                        <span class="table-down glyphicon glyphicon-arrow-down"></span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                
+                <button id="export-btn" class="btn btn-primary">Export Data</button>
+                <p id="export"></p>
+              </div>
+    <script src="js/tab.js"></script>
+    <script src="js/calc.js"></script>
+</body>
+</html>
